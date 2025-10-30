@@ -7,17 +7,6 @@ library(ggplot2)
 file_path <-"/Users/jessicawoskett/Library/CloudStorage/OneDrive-UNBC/Woskett_Analysis/spssdata.sav"#Change this path using you account
 data<-read_sav(file_path) #data reading SPSS file
 str(data) #Data structure checkingif(!requireNamespace("haven", quietly = TRUE))
-install.packages("haven", quiet = TRUE, dependencies = TRUE)
-
-library(haven)
-library(dplyr)
-library(ggplot2)
-
-file_path <-"/Users/jessicawoskett/Library/CloudStorage/OneDrive-UNBC/Woskett_Analysis/spssdata.sav" #Change this path using you account
-data<-read_sav(file_path) #data reading SPSS file
-
-str(data) #Data structure checking
-View(data)
 
 #####Getting the Fisher groups by reclassifying answers Q12
 
